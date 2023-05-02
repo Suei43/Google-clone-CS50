@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-right: 60px;
+}
+nav ul{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    font-size: 15px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.form{
+    position: absolute;
+    top: 16%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 10px;
+}
+.main-search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.search-bar{
+    width: 45%;
+    height: 47px;
+    border-radius: 30px;
+    border: .5px solid rgb(196, 196, 196);
+    outline: none;
+    padding: 10px 45px;
+    font-size: 16px;
+}
+.search-icon{
+    width: 50px;
+    height: 50px;
+    transform: scale(0.4)
+    translateY(2px);
+    left: 27.75%;
+    position: absolute;
+}
+.circle{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 4px solid gray;
+}
+.line{
+    width: 20px;
+    height: 4px;
+    background-color: gray;
+    transform-origin: right;
+    transform: rotate(45deg)
+     translateX(20px)
+     translateY(-7px);
+}
+.submit-btn{
+    width: 140px;
+    height: 40px;
+    outline: none;
+    background-color: rgb(245, 243, 243);
+    border: none;
+    font-size: 14px;
+    margin-block: 10px;
+    border-radius: 3px;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1.5px 1.5px rgb(204, 204, 204);
+}
+.search-bar:focus{
+    box-shadow: 0 0 1.5px 1.5px rgb(204, 204, 204);
+}
+.form img{
+    margin: auto;
+}
+.btns{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+@media (max-width:700px) {
+    nav{
+        padding-right: 20px;
+    }
+    .search-bar{
+        width: 60%;
+    }
+    .search-icon{
+        left: 20.5%;
+    }
+    .form img{
+        width: 270px;
+    }
+    .submit-btn{
+        font-size: 14px;
+        width: 120px;
+    }
+}
+.search-bar:hover{
+    box-shadow: 0 0 2px 2px rgb(226, 226, 226);
+}
+@media (max-width:400px){
+    .search-bar{
+        width: 80%;
+    }
+    .search-icon{
+        left: 10%;
+    }
+}
