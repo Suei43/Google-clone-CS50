@@ -24,4 +24,4 @@ This is a Google clone website developed as part of the CS50 Web Development cou
 The website was created by Suei as a project for CS50 Web Development course offered by Harvard University. The design and functionality are based on the Google search engine. The website is for educational purposes only and is not affiliated with Google Inc.
 
 <h2>License</h2>
-This project is licensed under the terms of the MIT license. See the LICENSE file for more information..
+This project is licensed under the terms of the <a href="https://opensource.org/license/mit/">MIT license.</a>
